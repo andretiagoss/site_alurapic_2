@@ -1,0 +1,49 @@
+Curso Alura - Angular 6
+-----------------------
+
+Comandos no terminal:
+---------------------
+  Front-End - Alurapic
+  --------------------
+  Instalação do Angular CLI globalmente na versão 6.0.7
+   npm install -g @angular/cli@6.0.7
+  
+  Criação de novo projeto com o nome alurapic
+   ng new alurapic
+  
+  Sobi um servidor local para aplicação e abri o navegador
+   ng serve --open
+  
+  Instalação do bootstrap na versão 4.1.1
+   npm install bootstrap@4.1.1
+   
+  Criação de componentes com o Angular CLI
+   ng generate component photos/photo-list
+   
+  Criação de modulos com o Angular CLI
+   ng generate module errors
+   
+  Back-End - Web API
+  ------------------
+  Baixa e instala todas as dependencias do projeto.
+   npm install
+  
+  Executa a Web API em determinada portal. 
+   npm start 
+
+Informações:
+------------
+ - NPM é o gerenciador de pacotes do NodeJs
+ - Componente é um artefato que armazena um comportamento, a apresentação, o CSS e o HTML.
+ - Data binding é uma associação de dados entre a view e o model e no Angular existem as seguintes formas de realizar esse procedimento:
+	- Angular Expression é usado quando se quer exibir dentro de uma tag o valor de uma propriedade do componente. Ex.: <h1>{{title}}</h1>
+	- O One-Way Databinding (da model para a view) é usado quando se quer exibir o valor da propriedade do componente dentro de atributos. 
+	Ex.: <img [src]="url">
+ - angular.json = Arquivo que diz respeito ao Build do projeto, onde se conofigura os CSS e Scripts globais.
+ - package.json = Arquivo que armazena todas as dependencias do projeto.
+ - O modulo no Angular é uma maneira de agrupar componentes.
+ - O Inboud Property é utilizado quando existe a necessidade de passar um valor da view para a model. 
+   Ex. model: @Input description = "";
+       view: <ap-photo description="Leoa"></ap-photo>
+ - Typescript é uma linguagem da Microsoft
+ - Rxjs é ferramenta para lidar com execuções assincronas.

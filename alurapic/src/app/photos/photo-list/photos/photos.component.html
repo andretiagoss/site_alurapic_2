@@ -1,0 +1,14 @@
+<!-- ol = lista ordenada, das mais recentes para a mais antiga -->
+<ol class="list-untyled">
+    <li *ngFor="let cols of rows" class="row">
+        <div *ngFor="let photo of cols" class="col-4">
+            <!-- Componente ap-photo sendo carregado com a diretiva *NgFor que faz um loop interando cada valor do array photos 
+            para a variavel photo, que por sua vez carrega a url e a description atraves do one-way databiding -->
+            <ap-photo     
+                [url]="photo.url" 
+                [description]="photo.description">
+            </ap-photo>
+        </div>
+    </li>
+</ol>
+
