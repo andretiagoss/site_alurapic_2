@@ -35,15 +35,17 @@ Informações:
 ------------
  - NPM é o gerenciador de pacotes do NodeJs
  - Componente é um artefato que armazena um comportamento, a apresentação, o CSS e o HTML.
- - Data binding é uma associação de dados entre a view e o model e no Angular existem as seguintes formas de realizar esse procedimento:
+ - Data binding é uma associação de dados entre a view e o componente e no Angular existem as seguintes formas de realizar esse procedimento:
 	- Angular Expression é usado quando se quer exibir dentro de uma tag o valor de uma propriedade do componente. Ex.: <h1>{{title}}</h1>
-	- O One-Way Databinding (da model para a view) é usado quando se quer exibir o valor da propriedade do componente dentro de atributos. 
+	- O One-Way Databinding (do componente para a view) é usado quando se quer exibir o valor da propriedade do componente dentro de atributos. 
 	Ex.: <img [src]="url">
+ - Event binding é uma associação de dados entre a view e o componente, mas em relação ao evento de um determinado componente da view, é usado quando se quer passar o valor de um campo na view para o componente. Ex.: (keyup)="filter = $event.target.value".
  - angular.json = Arquivo que diz respeito ao Build do projeto, onde se conofigura os CSS e Scripts globais.
  - package.json = Arquivo que armazena todas as dependencias do projeto.
  - O modulo no Angular é uma maneira de agrupar componentes.
- - O Inboud Property é utilizado quando existe a necessidade de passar um valor da view para a model. 
-   Ex. model: @Input description = "";
+ - O Inboud Property é utilizado quando existe a necessidade de passar um valor da view para o componente. 
+   Ex. componente: @Input description = "";
        view: <ap-photo description="Leoa"></ap-photo>
  - Typescript é uma linguagem da Microsoft
  - Rxjs é ferramenta para lidar com execuções assincronas.
+ - Pipe é utilizado para aplicar em expressões uma transformação em uma propriedade da view. Ex. com o pipe uppercase: {{ nome | uppercase }}

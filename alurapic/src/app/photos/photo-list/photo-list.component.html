@@ -1,1 +1,15 @@
-<ap-photos [photos]="photos"></ap-photos>
+<div class="text-center mt-3 mb-3">
+    <form>
+        <input
+            class="rounded"
+            type="search"
+            placeholder="search..."
+            autofocus
+            (keyup)="filter = $event.target.value" 
+            >
+            <!-- (keyup) = Event binding da view para o componente. 
+                           No evento Keyup pega o valor digitado e coloca na propriedade filter -->
+    </form>
+</div>
+
+<ap-photos [photos]="photos | filterByDescription: filter"></ap-photos>

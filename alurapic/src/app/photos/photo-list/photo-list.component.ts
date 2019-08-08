@@ -12,6 +12,7 @@ import { Photo } from '../photo/photo';
 export class PhotoListComponent implements OnInit {
 
   photos: Photo[] = [];
+  filter: string = '';
 
   //Por convenção de boas praticas o constructor é destinado para injeção de dependência
   constructor(

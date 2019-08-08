@@ -1,3 +1,7 @@
+<p class="text-center text-muted" *ngIf="!photos.length">
+    Sorry, no photos
+</p>
+
 <!-- ol = lista ordenada, das mais recentes para a mais antiga -->
 <ol class="list-untyled">
     <li *ngFor="let cols of rows" class="row">
